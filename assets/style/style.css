@@ -12,6 +12,11 @@ body {
     background-size: cover;
 }
 
+.btn-max {
+    max-width: 140px;
+    min-width: ;
+}
+
 @media (max-width:767px) {
     .home-quote .display-4 {
         font-size: 2.3rem;
