@@ -14,7 +14,10 @@ body {
 
 .btn-max {
     max-width: 140px;
-    min-width: ;
+}
+
+.lista-plano li + li {
+    border-top: 1px solid rgba(0, 0, 0, .2);
 }
 
 @media (max-width:767px) {
