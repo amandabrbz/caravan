@@ -115,7 +115,99 @@
                             <input type="password" class="form-control" placeholder="Senha de acesso">
                         </div>
                     </div>
+
+                    <div class="bg-light rounded box-shadow p-3 form-group">
+                        <h2 class="h6 text-primary">
+                            FORMA DE PAGAMENTO
+                        </h2>
+                        <nav class="nav btn-group pb-3" id="pgto" role="tablist">
+                            <button type="button" class="btn-sm btn-secondary active" id="nav-cred-tab"
+                                data-toggle="tab" href="#nav-cred" role="tab" aria-controls="nav-cred"
+                                aria-selected="true">Cartão de Crédito</button>
+                            <button type="button" class="btn-sm btn-secondary" id="nav-boleto-tab" data-toggle="tab"
+                                href="#nav-boleto" role="tab" aria-controls="nav-boleto" aria-selected="false">Boleto
+                                Bancário</button>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-cred" role="tabpanel"
+                                aria-labelledby="nav-cred-tab">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputCity">Nome Impresso</label>
+                                        <input type="text" class="form-control" id="inputCity" placeholder="Nome">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputState">Mês</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Mês</option>
+                                            <option>AC</option>
+                                            <option>BA</option>
+                                            <option>PR</option>
+                                            <option>SP</option>
+                                            <option>RJ</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputState">Ano</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Ano</option>
+                                            <option>AC</option>
+                                            <option>BA</option>
+                                            <option>PR</option>
+                                            <option>SP</option>
+                                            <option>RJ</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Número Cartão</label>
+                                        <input type="text" class="form-control" placeholder="Números">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Código de Segurança</label>
+                                        <input type="text" class="form-control" placeholder="XXX">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-boleto" role="tabpanel" aria-labelledby="nav-boleto-tab">
+                                <p class="lead">
+                                    Marque aqui para enviarmos o boleto por email.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Aceito os Termos e Condições</label>
+
+                    </div>
+                    <button type="submit" class="btn-lg btn-primary">Contratar Plano</button>
                 </form>
+            </div>
+            <div class="com-lg-6 mx-auto order-first order-lg-1 mb-4">
+                <div class="bg-light rounded p-4 box-shadow">
+                    <h2 class="h3 text-primary ">PLANO ESCOLHIDO</h2>
+                    <h2 class="pb-2">Gold</h2>
+                    <ul class="lista-plano list-unstyled">
+                        <li class="pb-3"> 30 dias de viagem</li>
+                        <li class="py-3"> 3 destinos diferentes</li>
+                        <li class="py-3"> Tudo pago</li>
+                        <li class="py-3"> Ingressos inclusos</li>
+                    </ul>
+                    <form action="">
+                        <select class="form-control bg-light">
+                            <option>Cidades</option>
+                            <option>California</option>
+                            <option>Dublin</option>
+                            <option>Paris</option>
+                        </select>
+                    </form>
+                    <div class="row mt-4 align-items-center">
+                        <div class="col">
+                            <span class="h4">R$5.000,00</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
